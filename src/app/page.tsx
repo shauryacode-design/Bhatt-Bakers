@@ -59,13 +59,13 @@ export default function Home() {
           </div>
           <div className="hero-content">
             <div className="name"><p>Bhatt Bakers</p></div>
-            <a
-              href="https://wa.me/918126282845"
-              target="_blank"
-              className="hero-whatsapp"
+            <button
+              type="button"
+              onClick={openWhatsApp}
+              className="hero-whatsapp bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition"
             >
               💬 Order on WhatsApp
-            </a>
+            </button>
             <h1>Fresh Custom Cakes in Dehradun</h1>
 
             <p>Birthday • Wedding • Anniversary • Same-Day Orders Available</p>
@@ -93,7 +93,7 @@ export default function Home() {
                 Elegant designs crafted for your special day. <br />
                 Custom tiers, fine details, and timeless flavors.
               </p>
-              <p>Starting from <span style={{ fontWeight: '600' }}>₹1,499</span></p>
+              <p>Starting from <span style={{ fontWeight: '600' }}>₹1,999</span></p>
               <a href="#contact">Order Now</a>
             </div>
 
@@ -220,13 +220,13 @@ export default function Home() {
               <h3>Contact</h3>
               <p>📞 +91 8126282845</p>
               <p>📧 rakeshsan9@gmail.com</p>
-              <a
-                href="https://wa.me/918126282845"
-                target="_blank"
-                className="footer-whatsapp"
+              <button
+                type="button"
+                onClick={openWhatsApp}
+                className="footer-whatsapp bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition"
               >
                 💬 Order on WhatsApp
-              </a>
+              </button>
             </div>
 
           </div>
