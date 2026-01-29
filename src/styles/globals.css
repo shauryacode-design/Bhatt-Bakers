@@ -2,6 +2,183 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+/* iPhone 13/14/15 Portrait (height: 780px, width: 390px) and similar iPhones */
+@media only screen and (max-width: 430px) and (max-height: 850px) and (orientation: portrait) {
+  .hero {
+    height: 80vh;
+    min-height: 520px;
+    align-items: flex-start;
+  }
+  .hero-content {
+    top: 10vh;
+    left: 5vw;
+    max-width: 90vw;
+    min-width: unset;
+    gap: 18px;
+    padding: 0 2vw;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .hero-content p,
+  .hero-content p:nth-child(4) {
+    font-size: 16px;
+    margin-top: 10px;
+    width: 90vw;
+    margin-left: 0;
+  }
+  .hero-whatsapp {
+    font-size: 15px;
+    margin-left: 0;
+    padding: 10px 10px;
+  }
+  .name p {
+    font-size: 22px;
+    top: -4vh;
+    left: 0;
+  }
+  .vid {
+    width: 100vw;
+    height: 40vw;
+    min-height: 180px;
+    border-radius: 18px;
+  }
+  .mobile-vid video {
+    border-radius: 18px;
+    min-height: 180px;
+    opacity: 0.4;
+  }
+  .second {
+    height: auto;
+    padding-top: 20px;
+  }
+  .models {
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+  }
+  .card {
+    width: 95vw;
+    max-width: 99vw;
+    min-height: 260px;
+    margin: 0 0 18px 0;
+    padding: 0 2vw;
+  }
+  .card h1 {
+    font-size: 22px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  .card video {
+    max-width: 90vw;
+    left: 0;
+    top: 0;
+    position: static;
+  }
+  .mobile-view {
+    width: 90vw;
+    max-width: 99vw;
+  }
+  .section2-head h1 {
+    font-size: 24px;
+  }
+  .third {
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .head h1 {
+    font-size: 24px;
+  }
+  .section1 h2 {
+    font-size: 18px;
+  }
+  .speaciality-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0 2vw;
+  }
+  .cards {
+    width: 90vw;
+    min-width: unset;
+    max-width: 99vw;
+    height: auto;
+    min-height: 120px;
+    padding: 10px 2vw;
+  }
+  .cards h1 {
+    font-size: 18px;
+  }
+  .cards p {
+    font-size: 14px;
+  }
+  .fourth {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+  }
+  .contact,
+  .location {
+    width: 100%;
+    gap: 10px;
+  }
+  .contact h1,
+  .location h1 {
+    font-size: 22px;
+  }
+  .contact-info {
+    padding: 10px;
+    gap: 10px;
+  }
+  .contact-info p {
+    font-size: 14px;
+  }
+  .contact-info button {
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+  .map-container iframe {
+    height: 180px;
+  }
+  .address {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .footer {
+    padding: 30px 2vw 10px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+  .footer-brand h2 {
+    font-size: 18px;
+  }
+  .footer-brand p {
+    font-size: 12px;
+    max-width: 90vw;
+  }
+  .footer-links h3,
+  .footer-contact h3 {
+    font-size: 14px;
+  }
+  .footer-links a,
+  .footer-contact p {
+    font-size: 13px;
+  }
+  .footer-whatsapp {
+    font-size: 13px;
+    padding: 10px 10px;
+  }
+  .footer-bottom {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -85,15 +262,15 @@ html {
   background-color: #25d366;
   color: white;
   padding: 10px 14px;
+  font-size: 16px;
   border-radius: 8px;
-  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
   width: fit-content;
   font-weight: 500;
+  cursor: pointer;
 }
 
-.hero-content button:hover {
-  transform: scale(1.03);
-}
 
 .name p {
   margin: 0;
@@ -141,28 +318,31 @@ html {
     align-items: center;
     text-align: center;
     min-width: 300px;
-    left: 10vw;
+    left: 13.5vw;
     position: absolute;
-
   }
 
   .hero-whatsapp {
     font-size: 18px;
-    margin-left: 8vw;
+    /* margin-left: 8vw; */
     padding: 12px 14px;
   }
+  .hero-content h1{
+    margin-left: 0;
+    /* margin-top: 0; */
 
+  }
   .hero-content p:nth-child(4) {
     font-size: 25px;
     text-align: center;
     width: 300px;
-    margin-left: 7.5vw;
+    /* margin-left: 7.5vw; */
   }
 
   .name p {
     position: absolute;
     top: -8vh;
-    left: 0;
+    left: -4vw;
     font-size: 35px;
     font-weight: bolder;
   }
@@ -287,10 +467,12 @@ html {
     /* background-color: black; */
     width: 300px;
   }
-  .mobile-wedding{
+
+  .mobile-wedding {
     margin-left: 20px;
   }
-  .mobile-birthday{
+
+  .mobile-birthday {
     position: static;
     width: 230px;
   }
@@ -315,6 +497,7 @@ html {
     margin-bottom: 0px;
     /* background-color: red; */
   }
+
   .section2-head h1 {
     font-size: 36px;
     margin: 0;
@@ -379,7 +562,7 @@ html {
     left: -1vw;
     top: 5vh;
   }
-  
+
   .card :nth-child(6) {
     font-size: 18px;
   }
@@ -469,9 +652,11 @@ html {
     height: 140vh;
     margin-bottom: 200px;
   }
-  .head h1{
+
+  .head h1 {
     font-size: 36px;
   }
+
   .section1 {
     padding: 0;
 
@@ -669,9 +854,12 @@ html {
   color: white;
   padding: 10px 14px;
   border-radius: 8px;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   width: fit-content;
   font-weight: 500;
+  border: none;
 }
 
 .footer-bottom {
