@@ -320,6 +320,7 @@ html {
     min-width: 300px;
     left: 15vw;
     position: absolute;
+    background-color: red;
   }
 
   .hero-whatsapp {
